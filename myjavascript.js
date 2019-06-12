@@ -8,6 +8,12 @@ function init () {
   // alert(ans);
 }
 
+function newGame () {
+  init();
+  document.getElementById("count").innerHTML = "10 (New Game)";
+  document.getElementById("input").innerHTML = "";
+}
+
 init ();
 
 document.onkeyup = function (x) {    
@@ -16,7 +22,7 @@ document.onkeyup = function (x) {
   if (count <= 0) {
       alert("You Loser !! The answer is " + ans);    
       document.getElementById("losses").innerHTML = ++losses;
-      init();
+      newGame();
   } else {
     document.getElementById("input").innerHTML = str;
     document.getElementById("count").innerHTML = --count; 
@@ -25,7 +31,7 @@ document.onkeyup = function (x) {
        alert("You got it !!!");
        document.getElementById("wins").innerHTML = ++wins;
        str = "";  
-       init();
+       newGame();
     }
   }
 }  

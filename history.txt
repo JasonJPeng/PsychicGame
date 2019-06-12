@@ -1,0 +1,7 @@
+ToDo:
+add style.css
+beep when the player press the wrong key
+telling the player when the new game starts
+format the readme file
+
+2019-06-12:  added css, new Game 
